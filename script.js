@@ -60,3 +60,21 @@ const yearsUntilRetirement=(birthYear, firstName) => {
 }
 console.log(yearsUntilRetirement(1980,'Pipe'));
 console.log(yearsUntilRetirement(1990,'Polla'));
+
+//functions calling other functions
+
+const cutFruitPieces1= function (fruit1) {
+return fruit1 * 4;
+};
+const fruitProcessor1 = function (apples1, oranges1) {
+    // console.log(apples, oranges);
+    const applePieces1= cutFruitPieces1(apples1);
+    const orangePieces1= cutFruitPieces1(oranges1);
+    
+    const juice1 =`Juice with ${applePieces1} pieces of apple 
+    and ${orangePieces1} pieces of orange`;
+    return juice1;
+    }
+
+    console.log(fruitProcessor1(2, 3)); //arvo on muuttujassa
+
