@@ -12,3 +12,10 @@ console.log(friends);
 const firstName = 'Pipe';
 const pipe=[firstName, 'Grön', 2023-1980,'student',friends];
 console.log(pipe);
+
+const newLenght =friends.push('Jay');
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift('Maria');
+console.log(friends);
