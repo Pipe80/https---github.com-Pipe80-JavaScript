@@ -29,3 +29,7 @@ friends.push(23);
 console.log(friends.indexOf('Maria'));
 console.log(friends.includes('Maria'))
 console.log(friends.includes(23))
+
+if(friends.includes('Maria')){
+    console.log(`you have a friend called ${friends[2]}`);
+}
