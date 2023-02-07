@@ -19,3 +19,13 @@ console.log(newLenght);
 
 friends.unshift('Maria');
 console.log(friends);
+
+//Remove elements
+friends.pop();//last
+const popped= friends.pop();
+console.log(popped);
+
+friends.push(23);
+console.log(friends.indexOf('Maria'));
+console.log(friends.includes('Maria'))
+console.log(friends.includes(23))
