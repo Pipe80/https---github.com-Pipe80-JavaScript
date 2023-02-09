@@ -25,3 +25,5 @@ console.log(pipe[interestedIn]);
 pipe.location='Laukaa';
 pipe ['linkedin']='@somethingLinkedin';
 console.log(pipe);
+
+console.log(`${pipe.firstName} has ${pipe.friends.length} friends and his best friend is called ${pipe.friends[0]}`)
