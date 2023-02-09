@@ -39,9 +39,21 @@ const pipe={
     friends: ['imaginery', 'none'],
     hasDriversLicense: true,
 
-    calcAge: function (birthYear) {
-        return 2023 -birthYear;
-}};
+    calcAge: function () {
+        // console.log(this);
+        this.age= 2023 - this.birthYear;
+        return this.age;
+},
 
-console.log(pipe.calcAge(1980));
-console.log(pipe['calcAge'](1980));
+getSummary: function () {
+
+    return `${this.firstName} is a ${this.calcAge()} -year old ${this.job}, 
+    and she has ${this.hasDriversLicense ? 'a' : 'no'} drivers licence.`
+}
+};
+
+
+console.log(pipe.calcAge());
+console.log(pipe.age);
+// console.log(pipe['calcAge'](1980));
+console.log(pipe.getSummary());
