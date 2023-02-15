@@ -274,3 +274,59 @@ calcTip(bills[2])];
 const totals= [bills[0] + tips[0] + bills[1] + tips[1] + bills[2]+ tips[2]];
 console.log(bills, tips, totals);
 
+
+// const pipe={
+//     firstName: 'Pipe',
+//     lastName:'Coder',
+//     age: 2023-1980,
+//     job: 'student',
+//     friends: ['imaginery', 'none']
+// }
+
+// console.log(pipe.firstName);
+// console.log(pipe['lastName']);
+
+// const nameKey = 'Name';
+// console.log(pipe['first'+nameKey]);
+// console.log(pipe['last'+nameKey]);
+
+// const interestedIn= prompt('What do you want to know about Pipe? Choose between firstName, lastName, age, job and friends');
+
+// if (pipe[interestedIn]) {
+// console.log(pipe[interestedIn]);
+// } else{
+//     console.log('wrong, Choose between firstName, lastName, age, job and friends');
+// }
+
+// pipe.location='Laukaa';
+// pipe ['linkedin']='@somethingLinkedin';
+// console.log(pipe);
+
+// console.log(`${pipe.firstName} has ${pipe.friends.length} friends and his best friend is called ${pipe.friends[0]}`)
+
+const pipe={
+    firstName: 'Pipe',
+    lastName:'Coder',
+    birthYear: 1980,
+    job: 'student',
+    friends: ['imaginery', 'none'],
+    hasDriversLicense: true,
+
+    calcAge: function () {
+        // console.log(this);
+        this.age= 2023 - this.birthYear;
+        return this.age;
+},
+
+getSummary: function () {
+
+    return `${this.firstName} is a ${this.calcAge()} -year old ${this.job}, 
+    and she has ${this.hasDriversLicense ? 'a' : 'no'} drivers licence.`
+}
+};
+
+
+console.log(pipe.calcAge());
+console.log(pipe.age);
+// console.log(pipe['calcAge'](1980));
+console.log(pipe.getSummary());

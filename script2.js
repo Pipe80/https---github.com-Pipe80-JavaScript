@@ -1,59 +1,17 @@
 // TÄLLÄ SIVULLA HARJOITTELEN TEHTÄVIÄ, JONKA JÄLKEEN SIIRRÄN NE SCRITP1.JS-TIEDOSTOON.
 //TÄMÄ SIITÄ SYYSTÄ, ETTÄ PYSTYN TESTAAMAAN HARJOITUSTEN TOIMIVUUTTA.
 
-
-// const pipe={
-//     firstName: 'Pipe',
-//     lastName:'Coder',
-//     age: 2023-1980,
-//     job: 'student',
-//     friends: ['imaginery', 'none']
-// }
-
-// console.log(pipe.firstName);
-// console.log(pipe['lastName']);
-
-// const nameKey = 'Name';
-// console.log(pipe['first'+nameKey]);
-// console.log(pipe['last'+nameKey]);
-
-// const interestedIn= prompt('What do you want to know about Pipe? Choose between firstName, lastName, age, job and friends');
-
-// if (pipe[interestedIn]) {
-// console.log(pipe[interestedIn]);
-// } else{
-//     console.log('wrong, Choose between firstName, lastName, age, job and friends');
-// }
-
-// pipe.location='Laukaa';
-// pipe ['linkedin']='@somethingLinkedin';
-// console.log(pipe);
-
-// console.log(`${pipe.firstName} has ${pipe.friends.length} friends and his best friend is called ${pipe.friends[0]}`)
-
-const pipe={
-    firstName: 'Pipe',
-    lastName:'Coder',
-    birthYear: 1980,
-    job: 'student',
-    friends: ['imaginery', 'none'],
-    hasDriversLicense: true,
-
-    calcAge: function () {
-        // console.log(this);
-        this.age= 2023 - this.birthYear;
-        return this.age;
-},
-
-getSummary: function () {
-
-    return `${this.firstName} is a ${this.calcAge()} -year old ${this.job}, 
-    and she has ${this.hasDriversLicense ? 'a' : 'no'} drivers licence.`
-}
-};
-
-
-console.log(pipe.calcAge());
-console.log(pipe.age);
-// console.log(pipe['calcAge'](1980));
-console.log(pipe.getSummary());
+// Coding Challenge #3
+// Let's go back to Mark and John comparing their BMIs! This time, let's use objects to
+// implement the calculations! Remember: BMI = mass / height ** 2 = mass
+// / (height * height) (mass in kg and height in meter)
+// Your tasks:
+// 1. For each of them, create an object with properties for their full name, mass, and
+// height (Mark Miller and John Smith)
+// 2. Create a 'calcBMI' method on each object to calculate the BMI (the same
+// method on both objects). Store the BMI value to a property, and also return it
+// from the method
+// 3. Log to the console who has the higher BMI, together with the full name and the
+// respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+// Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
+// tall.
