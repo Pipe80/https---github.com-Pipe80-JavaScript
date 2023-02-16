@@ -376,4 +376,50 @@ const mark= {
     {
         console.log(`${john.fullname}'s BMI (${john.bmi}) is higher than ${mark.fullname}'s BMI (${mark.bmi})`);
     }
+
+    // console.log('Lifting weights repetition 1 🤷‍♀️');
+
+for(let rep =1; rep <=10; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🤷‍♀️`);
+}
+//tämä oli jo todella tuttua, ja on hauska huomata, että osaa muokata koodia ja ymmärtää koodin toiminnan.
+
+const pipe =[
+'Pirjo',
+ 'Mure', 
+ 2023-1980,
+  'junior coder', 
+  ['Piia','Kirsi','Jukka'],
+];
+
+const types=[];
+
+for (let i =0; i < pipe.length; i++){
+    console.log(pipe[i], typeof pipe[i]);
+    // types[i]= typeof pipe[i];
+    types.push( typeof pipe[i] );
+}
+console.log(types);
+
+const years = [1990, 2008, 1950,2020];
+const ages = [];
+
+for (let i=[0]; i < years.length; i++) {
+    ages.push (2023 - years[i]);}
+    console.log(ages);          
+
+    console.log('----Only strings-----');
+    for (let i = 0; i < pipe.length; i++){
+        if (typeof pipe[i] !== 'string') continue;
+
+        console.log(pipe[i], typeof pipe[i]);
+    }
+    
+    console.log('---BREAK with number-----');
+    for (let i = 0; i < pipe.length; i++){
+        if (typeof pipe[i] === 'number') break;
+        
+        console.log(pipe[i], typeof pipe[i]);
+    }
+    
     
