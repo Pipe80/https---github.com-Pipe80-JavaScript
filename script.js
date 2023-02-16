@@ -422,4 +422,33 @@ for (let i=[0]; i < years.length; i++) {
         console.log(pipe[i], typeof pipe[i]);
     }
     
+    const pipe =[
+        'Pirjo',
+         'Mure', 
+         2023-1980,
+          'junior coder', 
+          ['Piia','Kirsi','Jukka'],
+        ];
+        
+        for (let i= pipe.length -1; i >= 0; i--) {
+            console.log(i, pipe[i]);
+        }
     
+        //hauska huomata kuinka tietyt asiat mitä koulussa on opeteltu ja joista ei ole silloin ymmärtänyt yhtään
+        //mitään, johtuen ihan siitä syystä, ettei asioita ole selitetty riittvän perusteellisesti. Tässä 
+        //kurssissa perusteita käydään läpi HUOLELLISEMMIN ja SELITETÄÄN jokainen yksityiskohta tarkasti.
+        //Koulun materiaalit monta kertaa tyyliä: laske yhteen 1+1 ja seuraavaksi laske teoreettinen maapallon pyörimisnopeus samalla kaavalla.
+        //eli, hypitään rajusti asioiden yli ja käytetään ikivanhoja tehtäviä, mihin kaikki ratkaisut löytyvät netistä.
+        // en tiedä kuinka moni oikeasti oppii copy paste metodista. Se on enemmänkin itsensä ampumista jalkaan (dragon age).
+        //ja olen itse tiedostanut viimeaikoina, että nimenomaan haluan oppia. PERUSTEET. KUNNOLLA.
+        //ja on kiva huomata, että koodin lukeminen tuntuu luontevammalta ja ymmärtää sitä. Se, että osaisi itse tehdä alusta loppuun, niin vaatii...paljon.
+        //Harjoittelua harjoittelun perään, koodin kirjoittamista ja toistamista. Sitä harjoittelen parhaillaan.
+    
+    for (let harjoitus = 1; harjoitus < 4; harjoitus++) 
+    {
+    console.log(`----harjoitus alkaa---- ${harjoitus}`);
+    
+    for(let nosto =1; nosto < 6; nosto++) 
+    {
+        console.log(`Painojen nostaminen ${nosto} kertaa 🤷‍♀️`)
+    }}
