@@ -452,3 +452,25 @@ for (let i=[0]; i < years.length; i++) {
     {
         console.log(`Painojen nostaminen ${nosto} kertaa 🤷‍♀️`)
     }}
+
+    // for (let toisto =1; toisto <= 10; toisto++){
+// console.log(`Nostetaan painoja hiiops ${toisto} kertaa! 🤷‍♀️`)
+
+// };
+
+let toisto =1;
+while (toisto <= 10){
+
+console.log(`Nostetaan painoja hiiops ${toisto} kertaa! 🤷‍♀️`);
+toisto++;
+
+}
+
+let noppa =Math.trunc(Math.random()*6 +1);
+
+while (noppa !== 6){
+    console.log(`Heitit ${noppa}`);
+    noppa= Math.trunc(Math.random() * 6 + 1);
+    if(noppa === 6){
+        console.log(`Looppi loppui`);
+}}
